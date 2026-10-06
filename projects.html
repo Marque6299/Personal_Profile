@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | John Mark Molina</title>
+  <meta name="description" content="Projects by John Mark Molina: a client-side Excel engine with a working demo, a multi-site performance reporting suite and an event branding and media suite.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4f8fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1324" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | John Mark Molina">
+  <meta property="og:description" content="Projects by John Mark Molina: a client-side Excel engine with a working demo, a multi-site performance reporting suite and an event branding and media suite.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Figtree:wght@400..700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('jm-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-nav-open="false">
+    <div class="wrap site-header__bar">
+      <a class="brand" href="index.html" aria-label="John Mark Molina, home page">
+        <span class="brand__mark" aria-hidden="true">JM</span>
+        <span>John Mark Molina</span>
+      </a>
+      <button class="ctl menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="ctl theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <header class="page-head wrap">
+      <h1>Projects</h1>
+      <p class="lead">Three projects from my work in web tools, analytics and event design. The first one has a working demo you can try.</p>
+    </header>
+
+    <div class="wrap">
+      <article class="project" id="excel-engine" aria-labelledby="excel-title">
+        <div>
+          <h2 id="excel-title">Client-side Excel engine</h2>
+          <p class="project__summary">Lightweight browser apps where people drop in a spreadsheet and get data extraction and analysis straight away.</p>
+          <p class="project__skills"><strong>Related skills:</strong> SheetJS, JavaScript (ES6+), HTML5, CSS3, data visualization</p>
+        </div>
+        <div class="project__body">
+          <p>The spreadsheet is parsed on the user&rsquo;s own device, so nothing is uploaded. Dropping a file in runs the data extraction and analysis automatically.</p>
+          <p>The demo below follows the same idea. It profiles any spreadsheet you give it and charts group averages.</p>
+        </div>
+
+        <section class="demo project__wide" aria-labelledby="demo-title">
+          <h3 id="demo-title">Try the approach</h3>
+          <p class="demo__intro">Drop in a spreadsheet to see a column summary, a chart of group averages and a data preview. The file is read in your browser and isn&rsquo;t uploaded. This is a small demonstration built for this site, not one of my work tools.</p>
+          <div class="demo__controls">
+            <div class="dropzone" id="demo-dropzone">
+              <input class="dropzone__input visually-hidden" type="file" id="demo-file" accept=".csv,.xlsx,.xls">
+              <label class="dropzone__label" for="demo-file">
+                <span class="dropzone__title">Choose a spreadsheet</span>
+                <span class="dropzone__hint">or drag it here. Accepts .xlsx, .xls and .csv files up to 5 MB.</span>
+              </label>
+            </div>
+            <button class="btn btn--secondary demo__sample" type="button" id="demo-sample">Use sample data</button>
+          </div>
+          <div class="demo__messages">
+            <p class="demo__status" id="demo-status" role="status"></p>
+            <p class="demo__error" id="demo-error" role="alert"></p>
+          </div>
+          <div class="demo__results" id="demo-results" hidden></div>
+          <noscript><p class="demo__intro">The demo needs JavaScript. Everything else on this site works without it.</p></noscript>
+        </section>
+      </article>
+
+      <article class="project" id="performance-suite" aria-labelledby="suite-title">
+        <div>
+          <h2 id="suite-title">Multi-Site Performance Reporting Suite</h2>
+          <p class="project__summary">Site-level performance tracking, split into dedicated views for WNS Iloilo and WNS Manila operations.</p>
+          <p class="project__skills"><strong>Related skills:</strong> Power BI, data modeling, performance metrics, internal reporting</p>
+        </div>
+        <div class="project__body">
+          <h3 class="project__label">Related work at WNS</h3>
+          <ul>
+            <li>Architect and maintain interactive team performance dashboards.</li>
+            <li>Standardize KPIs with operations teams.</li>
+            <li>Deliver clear visual insights to management.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project" id="event-suite" aria-labelledby="event-title">
+        <div>
+          <h2 id="event-title">Event Branding &amp; Media Suite</h2>
+          <p class="project__summary">Complete program flows, booklet layouts, projector visuals and presentation packages for quarterly Rewards and Recognition programs.</p>
+          <p class="project__skills"><strong>Related skills:</strong> Canva, graphic layout, event branding, presentation design</p>
+        </div>
+        <div class="project__body">
+          <h3 class="project__label">What I deliver for each program</h3>
+          <ul>
+            <li>The complete program flow.</li>
+            <li>Booklet layouts.</li>
+            <li>Projector visual assets.</li>
+            <li>Presentation packages.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <section class="cta on-brand" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Have a reporting process that&rsquo;s still manual?</h2>
+        <p class="cta__text">Tell me what the report is, who reads it and where the data lives, and we can work out what to automate.</p>
+        <p class="actions">
+          <a class="btn btn--primary" href="mailto:jm.me6299@gmail.com?subject=Hello%20John%20Mark">Email me</a>
+          <a class="btn btn--secondary" href="contact.html">Other ways to reach me</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__grid">
+      <div>
+        <p class="site-footer__name">John Mark Molina</p>
+        <p class="site-footer__muted">Lead Associate, Data Analytics. Based in the Philippines.</p>
+        <p class="site-footer__muted">&copy; 2026 John Mark Molina. Built with plain HTML, CSS and JavaScript.</p>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="mailto:jm.me6299@gmail.com?subject=Hello%20John%20Mark">Email me</a></li>
+        <li><a href="assets/docs/John_Mark_Molina_Resume.pdf" download>R&eacute;sum&eacute; (PDF)</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/excel-demo.js" defer></script>
+</body>
+</html>
